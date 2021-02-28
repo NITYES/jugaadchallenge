@@ -3,15 +3,22 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body{
+    overflow: scroll;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
   
   /* header starts */
   header {
     height: 20vh;
+    width: 100%;
     background: rgb(255, 255, 255);
   }
   header .logo {
     width: 100%;
-    height: 20vh;
+    min-height: 100%;
     background-image: url('/images/juggad_imagess.jpg');
     background-position: center;
     background-size: contain;
@@ -22,13 +29,20 @@
   
   /* section  starts*/
   section {
-    height: 60vh;
-    background: rgb(213, 215, 221);
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(220deg,rgba(130, 130, 175, 0.404),rgb(117, 117, 226));
     position: relative;
+  }
+  section:hover{
+    /* background: linear-gradient(120deg,rgb(191, 191, 231),rgb(53, 53, 194),blue); */
+
   }
   .coming-soon{
     width: 100%;
-    height: 40%;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,8 +73,8 @@
   }
   .initiative-digital-support-container{
     position: inherit;
-    width: 100%;
-    height: 60%;
+    min-width: 100%;
+    min-height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -72,8 +86,7 @@
 img{
   width: 150px;
   height: 150px;
-  /* margin: 20px auto; */
-  /* background-color: rgb(32, 10, 32); */
+ 
 }
 p{
   padding: 5px;
@@ -83,8 +96,7 @@ p{
    text-align: center;
   }
 
-  .digital{
-  }
+ 
 
   .support-container{
     text-align: center;
@@ -97,27 +109,27 @@ p{
     justify-content: space-around;
   }
 
-  .support{
-
-  }
+  
   /* footer style starts...... */
-  footer {
-    height: 30vh;
+   footer  {
+    max-height: 20vh;
+    width: 100%;
     display: flex;
     color: white;
     flex-direction: row;
-    flex-wrap: wrap;
     position: relative;
+    flex-wrap: wrap;
   }
   footer .container {
-    background-color: rgb(65, 62, 62);
+    position: relative;
+    background: linear-gradient(220deg,rgba(130, 130, 175, 0.404),rgb(117, 117, 226));
     width: 100%;
-    height: calc(30vh - 50px );
-    display: flex;
+    height: 50%;
   }
-  footer .socialmedialink-email-container{
+  footer .container .socialmedialink-email-container{
     width: 100%;
-    margin:auto
+    height: 50%;
+    margin:10px auto 0;
   }
 
   footer .container .socialmedialink-email-container .socialmedialink {
@@ -131,8 +143,7 @@ p{
   footer .container  .socialmedialink-email-container .email-container {
     position: relative;
     text-align: center;
-  padding: 20px;
-   
+   padding: 10px;
   }
   
 
@@ -153,8 +164,8 @@ p{
     text-align: center;
     line-height: 50px;
     color: white;
-    background: black;
-    height: 50px;
+    background: rgb(40, 37, 51);
+    height: 20%;
     width: 100%;
    
   }
@@ -210,9 +221,11 @@ p{
   
   .socialmedialink a:hover {
     background: rgb(255, 255, 255);
-  }
+  } 
     /* footer style starts ends */
 
+
+   
   
   
   /* responsive design for mobile */
@@ -231,7 +244,7 @@ p{
        
       }
       section {
-        height: 140vh;
+        min-height: 140vh;
       }
 
       .initiative-digital-support-container{
