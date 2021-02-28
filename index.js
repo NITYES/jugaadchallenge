@@ -3,12 +3,12 @@ const ejs=require('ejs');
 const path=require('path');
 const dotenv=require('dotenv')
 
-dotenv.config();
-const app=express();
+dotenv.config();   
+const app=express();  
 
 //set engine
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', ejs);
+app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'publics')));
 
 
