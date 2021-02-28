@@ -23,22 +23,19 @@
   /* section  starts*/
   section {
     height: 60vh;
-    width: 100%;
     background: rgb(213, 215, 221);
     position: relative;
   }
- section  .coming-soon{
+  .coming-soon{
     width: 100%;
     height: 40%;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
-  section .coming-soon h1{
+  h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     text-shadow: 2px 2px 0 rgb(255 255 255);
     animation: comingsoonblink 0.5s linear infinite;
   }
@@ -60,80 +57,51 @@
       text-shadow:  2px 2px 0 rgb(255, 255, 255);
     }
   }
-
-
   .initiative-digital-support-container{
+    position: inherit;
     width: 100%;
     height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    position: relative;
-    flex-wrap: wrap;
 
   }
 
 
 
-.img{
+img{
   width: 150px;
   height: 150px;
-  
+  /* margin: 20px auto; */
+  /* background-color: rgb(32, 10, 32); */
 }
-
 p{
   padding: 5px;
   font-size: 20px;
-  text-align: center;
-
 }
   .initiative,.digital{
-    position: relative;
-    background-color: blue;
-    width: 25%;
-    height: 100%;
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
+   text-align: center;
   }
 
-  .image{
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    background-color: crimson;
+  .digital{
   }
 
   .support-container{
-    position: relative;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(139, 91, 27);
+    text-align: center;
    
   }
   
   .support-content{
-  height: 100%;
-  width: 100%;
-    margin:auto;
-   display: flex;
-   flex-direction: row;
-    background-color: cyan;
-    justify-content: center;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
   }
 
   .support{
-         /* margin: auto; */
-         width: 150px;
-         height: 150px;
-         margin: auto 5px;
-         background-color: darkgreen;
+
   }
   /* footer style starts...... */
   footer {
-    width: 100%;
     height: 30vh;
     display: flex;
     color: white;
@@ -144,36 +112,17 @@ p{
   footer .container {
     background-color: rgb(65, 62, 62);
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: calc(30vh - 50px );
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  footer .copyrights {
-      
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    background: black;
-    height: 50px;
-    width: 100%;
-   
   }
   footer .socialmedialink-email-container{
-    position: relative;
-    height: 150px;
-    width: 50%;
-    /* margin:a; */
-    background-color: darkorchid;
+    width: 100%;
+    margin:auto
   }
 
   footer .container .socialmedialink-email-container .socialmedialink {
     position: relative;
     width: 100%;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,10 +131,8 @@ p{
   footer .container  .socialmedialink-email-container .email-container {
     position: relative;
     text-align: center;
-    background-color: darkred;
-   height: 50px;
-   width: 100%;
-   line-height: 50px;
+  padding: 20px;
+   
   }
   
 
